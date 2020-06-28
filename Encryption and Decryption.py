@@ -154,7 +154,6 @@ def main2():
                     print("\nDecrypting ", file)
                     decrypt_file(secret_key, file)
                     # after decryption we could delete the file.. ;)
-                # just remove the '#' in the next line
                     os.remove(file)
  
     # path is no directory, but must be a file
@@ -164,12 +163,11 @@ def main2():
                 print("\nDecrypting ", path)
                 decrypt_file(secret_key, path)
             # after decryption we could delete the file.. ;)
-            # but think about typing in the wrong key...
-            # just remove the '#' in the next line
+            # but think about typing in the wrong key..
                 os.remove(path)
 if __name__ == '__main__':
     #while True:
-     #   password = str(input("Setting up stuff. Enter a password that will be used for decryption: "))
+     #   password = str(input("Enter a password that will be used for decryption: "))
       #  repassword = str(input("Confirm password: "))
        # if password == repassword:
         #        break
